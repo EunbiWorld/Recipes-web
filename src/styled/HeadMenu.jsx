@@ -1,45 +1,51 @@
 import styled from "styled-components";
 
 const HeadMenu = styled.header`
-  background-color: lightgray;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  align-items: center;
-  padding: 0 20px;
-  height: 6rem;
-  width: 100%;
-  position: sticky;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
+  header{
+    height: 6rem;
+    background-color: lightgray;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
-  .content {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    margin-left: 150px;
+  .wrapper{
+    width: 1100px;
+    margin: 0 auto;
   }
-  .link-style {
-    text-decoration: none;
-    color: inherit;
-    transition: font-size 0.3s ease;
+  .container{
+    line-height: 6rem;
+    float: left;
   }
-  .link-style:hover {
+  .nav-menu{
+    float: right;
     font-size: 20px;
   }
-  nav {
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-  }
-  nav ul {
+  .nav-menu li{
+    float: left;
     list-style: none;
-    display: flex;
-    padding: 0;
   }
-  nav li {
-    margin-right: 34.31px;
+  .nav-menu a{
+    line-height: 6rem;
+    text-decoration: none;
+    padding: 0 20px;
+    display: block;
+  }
+  .nav-menu li{
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+  .nav-menu li:hover{
+    background-color: yellow;
+  }
+  .content{
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+  .content:hover{
+    background-color: yellow;
   }
 `;
 
