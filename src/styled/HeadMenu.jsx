@@ -3,11 +3,11 @@ import styled from "styled-components";
 const HeadMenu = styled.header`
   header{
     height: 6rem;
-    background-color: lightgray;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    border-bottom: 1px solid gray;
   }
   .wrapper{
     width: 1100px;
@@ -24,28 +24,28 @@ const HeadMenu = styled.header`
   .nav-menu li{
     float: left;
     list-style: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
   }
-  .nav-menu a{
+  .nav-menu span{
     line-height: 6rem;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 30px;
     display: block;
   }
-  .nav-menu li{
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-decoration: none;
-  }
   .nav-menu li:hover{
-    background-color: yellow;
+    background-color: lightgreen;
   }
   .content{
+    padding: 0 20px;
     cursor: pointer;
     transition: background-color 0.3s;
     text-decoration: none;
+    font-size: 20px;
   }
   .content:hover{
-    background-color: yellow;
+    background-color: lightgreen;
   }
 `;
 
