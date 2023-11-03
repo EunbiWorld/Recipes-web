@@ -3,7 +3,6 @@ import styled from "styled-components";
 const HeadMenu = styled.header`
   header{
     height: 6rem;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
