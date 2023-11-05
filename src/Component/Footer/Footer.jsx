@@ -26,7 +26,7 @@ const Footer = () => {
                 className="link-style"
                 onClick={scrollToTop}
               >
-                '웹 이름'소개
+                소개
               </Link>
             </li>
             <ul>
