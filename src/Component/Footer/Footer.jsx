@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import FooterMenu from "../../styled/FooterMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import logo from "../../res/img/logo.png";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -12,8 +13,8 @@ const Footer = () => {
     <FooterMenu>
       <div className="container">
         <div className="main">
-          <p>'LOGO 이미지 삽입'</p>
-          <p>레시피 웹은 맛있는 요리 레시피를 공유하는 곳입니다.</p>
+          <img src={logo} alt="레시피 웹 로고" />
+          <p>쿠킹 스튜디오는 맛있는 요리 레시피를 공유하는 곳입니다.</p>
         </div>
 
         <section className="menu">
@@ -64,7 +65,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faGithub} className="icon" />
                   김준
                 </a>
               </li>
@@ -75,7 +76,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faGithub} className="icon" />
                   정승윤
                 </a>
               </li>
@@ -86,7 +87,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faGithub} className="icon" />
                   이은비
                 </a>
               </li>
@@ -97,7 +98,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faGithub} className="icon" />
                   유세훈
                 </a>
               </li>

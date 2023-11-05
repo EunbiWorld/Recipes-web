@@ -2,23 +2,27 @@ import styled from "styled-components";
 
 const FooterMenu = styled.div`
   .container {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-top: 1.5px solid #414581;
+    border-bottom: 1.5px solid #414581;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
   }
 
   .main {
-    border-right: 1px solid gray;
+    border-right: 1.5px solid #414581;
     text-align: center;
-    grid-column: 1 / span 2; 
+    grid-column: 1 / span 2;
     padding: 10px;
+  }
+  .main img {
+    width: 100px;
   }
 
   .main p {
+    font-family: "Cafe24SsurroundAir";
     font-size: 18px;
-    color: #333;
+    color: #414581;
   }
 
   .menu {
@@ -33,8 +37,9 @@ const FooterMenu = styled.div`
 
   .menu h1,
   .Personal-page h1 {
+    font-family: "Cafe24Ssurround";
     font-size: 18px;
-    color: #000000;
+    color: #414581;
     display: flex;
     justify-content: center;
   }
@@ -42,6 +47,7 @@ const FooterMenu = styled.div`
   .menu ul,
   .Personal-page ul {
     padding-left: 0;
+    font-family: "Cafe24SsurroundAir";
     list-style: none;
     display: flex;
     justify-content: center;
@@ -49,21 +55,24 @@ const FooterMenu = styled.div`
   }
 
   .menu li,
-.Personal-page li {
+  .Personal-page li {
     font-size: 15px;
     color: #000000;
     text-align: left;
     margin: 0 10px;
   }
 
+  .icon {
+    margin-right: 5px;
+  }
+
   .link-style {
     text-decoration: none;
-    color: inherit;
+    color: #414581;
     transition: font-size 0.3s ease;
   }
 
   .link-style:hover {
-    color: green;
     font-size: 17px;
   }
 
@@ -74,8 +83,8 @@ const FooterMenu = styled.div`
 
     .menu,
     .Personal-page {
-      display: inline-block; /* 인라인 요소로 배치 변경 */
-      margin: 0; /* 여백 초기화 */
+      display: inline-block;
+      margin: 0;
     }
   }
 `;
