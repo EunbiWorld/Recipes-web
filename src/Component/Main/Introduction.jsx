@@ -13,21 +13,24 @@ const Introduction = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
 
   return (
     <IntroPage>
       <div className="slide">
         <Slider {...settings}>
-          <div>
+          <div className="slide-item">
             <img src={food1} alt="Food 1" />
+            <div className="custom-dot" />
           </div>
-          <div>
+          <div className="slide-item">
             <img src={food2} alt="Food 2" />
+            <div className="custom-dot" />
           </div>
-          <div>
+          <div className="slide-item">
             <img src={food3} alt="Food 3" />
+            <div className="custom-dot" />
           </div>
         </Slider>
       </div>
@@ -37,4 +40,3 @@ const Introduction = () => {
 };
 
 export default Introduction;
-

@@ -5,9 +5,11 @@ import Cafe24SsurroundAir from "../res/font/Cafe24SsurroundAir.woff";
 const AppPage = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh; /* 최소 높이를 화면 높이와 같게 설정 */
   background-color: #fff9f4;
   background: linear-gradient(to bottom, #fff9f4, #fec198);
+  background: linear-gradient(to bottom, #fff9f4, #fec198) fixed; /* 배경 이미지를 고정 배경으로 설정 */
+
 
 
   @font-face {
