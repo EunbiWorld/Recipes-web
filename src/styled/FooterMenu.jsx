@@ -2,43 +2,42 @@ import styled from "styled-components";
 
 const FooterMenu = styled.div`
   .container {
-    border-top: 1.5px solid #414581;
-    border-bottom: 1.5px solid #414581;
+    border-top: 0.05em solid #414581;
+    border-bottom: 0.05em solid #414581;
+    height: 10em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 0.2778em;
+    align-items: center;
   }
 
   .main {
-    border-right: 1.5px solid #414581;
+    border-right: 0.05em solid #414581;
     text-align: center;
     grid-column: 1 / span 2;
-    padding: 10px;
   }
   .main img {
-    width: 100px;
+    width: 6.9444em;
   }
 
   .main p {
     font-family: "Cafe24SsurroundAir";
-    font-size: 18px;
+    font-size: 1.125em;
     color: #414581;
   }
 
   .menu {
     grid-column: 3;
-    padding: 10px;
   }
 
   .Personal-page {
     grid-column: 4;
-    padding: 10px;
   }
 
   .menu h1,
   .Personal-page h1 {
     font-family: "Cafe24Ssurround";
-    font-size: 18px;
+    font-size: 1.125em;
     color: #414581;
     display: flex;
     justify-content: center;
@@ -56,14 +55,14 @@ const FooterMenu = styled.div`
 
   .menu li,
   .Personal-page li {
-    font-size: 15px;
+    font-size: 0.9375em;
     color: #000000;
     text-align: left;
-    margin: 0 10px;
+    margin: 0 0.2778em;
   }
 
   .icon {
-    margin-right: 5px;
+    margin-right: 0.1389em;
   }
 
   .link-style {
@@ -73,18 +72,24 @@ const FooterMenu = styled.div`
   }
 
   .link-style:hover {
-    font-size: 17px;
+    font-size: 1.2em;
   }
-
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 48em) {
     .container {
-      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      height: 20em;
     }
 
+    .main,
     .menu,
     .Personal-page {
-      display: inline-block;
-      margin: 0;
+      flex: 1;
+    }
+
+    .main {
+      border-right: none;
+      margin-top: 1em;
     }
   }
 `;

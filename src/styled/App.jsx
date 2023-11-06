@@ -5,10 +5,9 @@ import Cafe24SsurroundAir from "../res/font/Cafe24SsurroundAir.woff";
 const AppPage = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #fff9f4;
-  background: linear-gradient(to bottom, #fff9f4, #fec198);
-
+  background: linear-gradient(to bottom, #fff9f4, #fec198) fixed;
 
   @font-face {
     font-family: "Cafe24Ssurround";

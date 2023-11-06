@@ -11,10 +11,10 @@ function App() {
     <AppPage>
       <Header></Header>
       <Routes>
-        <Route path="/" element={<Recommendation />} /> {/* 메인 페이지 */}
+        <Route path="/" element={<Recommendation />} />
         <Route path="/Introduction" element={<Introduction />} />
         <Route path="/Recommendation" element={<Recommendation />} />
-        <Route path="/Recipe" element={<RecipeList />} />
+        <Route path="/RecipeList" element={<RecipeList />} />
       </Routes>
       <Footer></Footer>
     </AppPage>
