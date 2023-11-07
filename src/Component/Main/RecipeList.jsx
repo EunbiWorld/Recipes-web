@@ -18,31 +18,31 @@ const RecipeList = () => {
             <img src={GogiImg} alt="고기" />
             <span>한식</span>
             <h1>삽겹살</h1>
-            <p>뭐 넣을까</p>
+            <p>별점이나</p>
           </div>
           <div className="RecipeCard">
             <img src={GogiImg} alt="고기" />
             <span>한식</span>
             <h1>삽겹살</h1>
-            <p>뭐 넣을까</p>
+            <p>요리 난이도나</p>
           </div>
           <div className="RecipeCard">
             <img src={GogiImg} alt="고기" />
             <span>한식</span>
             <h1>삽겹살</h1>
-            <p>뭐 넣을까</p>
+            <p>요리 시간</p>
           </div>
           <div className="RecipeCard">
             <img src={GogiImg} alt="고기" />
             <span>한식</span>
             <h1>삽겹살</h1>
-            <p>뭐 넣을까</p>
+            <p>보여주면</p>
           </div>
           <div className="RecipeCard">
             <img src={GogiImg} alt="고기" />
             <span>한식</span>
             <h1>삽겹살</h1>
-            <p>뭐 넣을까</p>
+            <p>괜찮을까?</p>
           </div>
         </nav>
       </section>
