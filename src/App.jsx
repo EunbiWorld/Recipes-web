@@ -5,6 +5,7 @@ import Recommendation from "./Component/Main/Recommendation";
 import Introduction from "./Component/Main/Introduction";
 import RecipeList from "./Component/Main/RecipeList";
 import Footer from "./Component/Footer/Footer";
+import RecipeInfo from "./Component/Main/RecipeInfo";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/Introduction" element={<Introduction />} />
         <Route path="/Recommendation" element={<Recommendation />} />
         <Route path="/RecipeList" element={<RecipeList />} />
+        <Route path="/RecipeList/Info" element={<RecipeInfo/>}/>
       </Routes>
       <Footer></Footer>
     </AppPage>
