@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Cooking Studio 프로젝트
 -------------------------------------------------
 정리
@@ -20,13 +19,3 @@ Cooking Studio 프로젝트
 
 - recipeLoad() 레시피 로드 -> 세훈이가 이걸로 레시피 리스트 불러오면 됨.
 - recipeLoad_reco() 레시피 로드
-=======
-참고사항
-- npm 설치 후 라이브러리 설치 해야함
-- npm i
-- npm install react-slick
-- npm install slick-carousel
-
-해야할 일
-- json파일 불러올때 쉽게 정리해야 함
->>>>>>> 0c5d623890bb5b332690a8521d2c4b9cf272c894
