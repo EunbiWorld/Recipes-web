@@ -1,6 +1,20 @@
 import styled from "styled-components";
 
 const RecipeListPage = styled.header`
+  .Recipe-header {
+    text-align: center;
+    padding: 2em 1em;
+  }
+  .Recipe-header h2 {
+    font-size: 1.5em;
+    font-family: "Cafe24Ssurround";
+    color: #414581;
+  }
+  .Recipe-header span {
+    font-size: 1em;
+    font-family: "Cafe24Ssurroundair";
+    color: #414581;
+  }
   .grid-container {
     width: 1100px;
     height: auto;
@@ -8,6 +22,7 @@ const RecipeListPage = styled.header`
     justify-content: space-between;
     align-items: center;
     margin: 6rem auto;
+    margin-top: 0;
   }
   .RecipeListGrid {
     margin-top: 50px;
@@ -52,7 +67,7 @@ const RecipeListPage = styled.header`
     font-family: "Cafe24Ssurroundair";
   }
   @media screen and (max-width: 1200px) {
-    .grid-container{
+    .grid-container {
       width: auto;
       margin-left: 50px;
       margin-right: 50px;
@@ -62,7 +77,7 @@ const RecipeListPage = styled.header`
     }
   }
   @media screen and (max-width: 768px) {
-    .grid-container{
+    .grid-container {
       width: auto;
       margin-left: 50px;
       margin-right: 50px;
@@ -70,7 +85,7 @@ const RecipeListPage = styled.header`
     .RecipeListGrid {
       grid-template-columns: repeat(2, 1fr);
     }
-    .RecipeCard{
+    .RecipeCard {
       height: 335px;
     }
   }

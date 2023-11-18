@@ -23,6 +23,10 @@ const RecipeList = () => {
 
   return (
     <RecipeListPage>
+      <section className="Recipe-header">
+        <h2>DELICIOUS RECIPES FOR YOU</h2>
+        <span>당신을 위한 맛있는 레시피입니다</span>
+      </section>
       <section className="grid-container">
         <nav className="RecipeListGrid">
           {recipes.map((recipe, index) => (
