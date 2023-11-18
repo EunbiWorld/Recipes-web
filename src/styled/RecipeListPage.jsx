@@ -27,8 +27,8 @@ const RecipeListPage = styled.header`
     font-family: "Cafe24Ssurroundair";
   }
   .RecipeCard img {
-    width: calc(100%);
-    height: calc(100% - 6rem);
+    width: 100%;
+    height: 250px;
     border: 1px #414581;
     border-style: solid;
   }
