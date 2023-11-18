@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 const IntroPage = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   .slide {
+    width: 85em;
     overflow-x: hidden;
   }
 
@@ -25,6 +30,7 @@ const IntroPage = styled.div`
   }
 
   .content {
+    width: 85em;
     margin-top: 5rem;
     margin-bottom: 5rem;
     display: grid;
