@@ -27,17 +27,14 @@ const Recommendation = () => {
           <span>오늘의 추천 레시피입니다</span>
           <section className="recipe-grid">
             {recipes.map((recipe, index) => (
-              <Link
-                to={`/Recipe/Info?id=${recipe.ID}`}
-                key={recipe.ID}
-                className="recipe-card"
-              >
-                <div className="grid_item">
+              <div className="grid_item" key={recipe.ID}>
+                <Link to={`/Recipe/Info?id=${recipe.ID}`}>
                   <img src={recipe.Image} alt={recipe.Title} />
-                  <h2>{recipe.Title}</h2>
-                  <p>{recipe.Recipe}</p>
-                </div>
-              </Link>
+                  <div className={`recipe-title`}>
+                    {recipe.Title}
+                  </div>
+                </Link>
+              </div>
             ))}
           </section>
         </section>
