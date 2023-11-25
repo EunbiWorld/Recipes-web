@@ -16,7 +16,7 @@ function App() {
         <Route path="/Introduction" element={<Introduction />} />
         <Route path="/Recommendation" element={<Recommendation />} />
         <Route path="/RecipeList" element={<RecipeList />} />
-        <Route path="/RecipeList/Info" element={<RecipeInfo/>}/>
+        <Route path="/RecipeList/Info/:index" exact Component={RecipeInfo} element={<RecipeInfo/>}/>
       </Routes>
       <Footer></Footer>
     </AppPage>

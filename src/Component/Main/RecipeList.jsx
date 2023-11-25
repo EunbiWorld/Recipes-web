@@ -32,52 +32,16 @@ const RecipeList = () => {
           {recipes.map((recipe, index) => (
             <div key={index} className="RecipeCard">
               <Link
-                to={`/RecipeList/info?id=${recipe.ID}`}
+                to={`/RecipeList/info/${index}`}
                 style={{ textDecoration: "none" }}
               >
                 <img src={recipe.Image} alt={recipe.Title} />
+                <span>카테고리 들어갈 곳</span>
                 <h1>{recipe.Title}</h1>
-                <p>뭐 넣을까</p>
+                <p>소요시간 들어갈 곳</p>
               </Link>
             </div>
           ))}
-
-          <div className="RecipeCard">
-            <img src={GogiImg} alt="고기" />
-            <span>한식</span>
-            <h1>삽겹살</h1>
-            <p>뭐 넣을까</p>
-          </div>
-          <div className="RecipeCard">
-            <img src={GogiImg} alt="고기" />
-            <span>한식</span>
-            <h1>삽겹살</h1>
-            <p>별점이나</p>
-          </div>
-          <div className="RecipeCard">
-            <img src={GogiImg} alt="고기" />
-            <span>한식</span>
-            <h1>삽겹살</h1>
-            <p>요리 난이도나</p>
-          </div>
-          <div className="RecipeCard">
-            <img src={GogiImg} alt="고기" />
-            <span>한식</span>
-            <h1>삽겹살</h1>
-            <p>요리 시간</p>
-          </div>
-          <div className="RecipeCard">
-            <img src={GogiImg} alt="고기" />
-            <span>한식</span>
-            <h1>삽겹살</h1>
-            <p>보여주면</p>
-          </div>
-          <div className="RecipeCard">
-            <img src={GogiImg} alt="고기" />
-            <span>한식</span>
-            <h1>삽겹살</h1>
-            <p>괜찮을까?</p>
-          </div>
         </nav>
       </section>
     </RecipeListPage>
@@ -85,3 +49,12 @@ const RecipeList = () => {
 };
 
 export default RecipeList;
+
+
+
+// <div className="RecipeCard">
+//             <img src={GogiImg} alt="고기" />
+//             <span>한식</span>
+//             <h1>삽겹살</h1>
+//             <p>괜찮을까?</p>
+//           </div>

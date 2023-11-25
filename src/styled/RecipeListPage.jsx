@@ -34,7 +34,6 @@ const RecipeListPage = styled.header`
   }
   .RecipeCard {
     width: auto;
-    height: 380px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
