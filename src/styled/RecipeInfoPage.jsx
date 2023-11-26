@@ -6,12 +6,14 @@ const RecipeInfoPage = styled.header`
     height: auto;
     flex-direction: column;
     margin: 3rem auto;
-    border-color: red;  //컨테이너 사이즈 가늠하기 위해서 임시로 해놈
-    border-style: solid;  //컨테이너 사이즈 가늠하기 위해서 임시로 해놈
+    border-color: none;  //컨테이너 사이즈 가늠하기 위해서 임시로 해놈
+    border-style: none;  //컨테이너 사이즈 가늠하기 위해서 임시로 해놈
   }
   .title-section{
     width: 100%;
     height: fit-content;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
   .info-section{
     width: 100%;
@@ -41,15 +43,22 @@ const RecipeInfoPage = styled.header`
     display: flex;
     flex-direction: column;
     margin: 20px;
+    margin-top: 5px;
+  }
+  h1{
+    font-family: "Cafe24Ssurround";
   }
   h2{
     text-align: center;
     font-size: 30px;
     text-align: center;
+    font-family: "Cafe24Ssurroundair";
   }
   p{
     padding-left: 20px;
     padding-right: 20px;
+    line-height: 25px;
+    font-family: "Cafe24Ssurroundair";
   }
 `;
 
