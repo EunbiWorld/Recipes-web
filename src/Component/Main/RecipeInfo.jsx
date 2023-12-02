@@ -39,17 +39,18 @@ const RecipeInfo = () => {
           </div>
           <div className="text-section">
             <h2>재료</h2>
-            <p>{recipe.Source.split("\n").map((line, index) => (
+            <p1>{recipe.Source.split("\n").map((line, index) => (
                   <React.Fragment key={index}>
                     <div>{line}</div>
                   </React.Fragment>
-                ))}</p>
+                ))}</p1>
             <h2>조리순서</h2>
-            <p>{recipe.Recipe.split("\n").map((line, index) => (
+            <p2>{recipe.Recipe.split("\n").map((line, index) => (
                   <React.Fragment key={index}>
                     <div>{line}</div>
+                    <br/>
                   </React.Fragment>
-                ))}</p>
+                ))}</p2>
           </div>
         </nav>
       </section>
