@@ -73,6 +73,26 @@ const IntroPage = styled.div`
     font-size: 1.3rem;
     color: #414581;
   }
+
+  @media (max-width: 1300px) {
+    .content {
+      grid-template-columns: 1fr;
+      margin-top: 0px;
+    }
+
+    .content_logo,
+    .content_intro {
+      grid-column: 1;
+      display: grid;
+      justify-content: center;
+      text-align: center; // 내용을 가운데 정렬하는 부분입니다
+    }
+
+    .content_logo img {
+      margin: 5rem auto; // 이미지를 수직으로 가운데 정렬하기 위해 변경
+      width: 50%;
+    }
+  }
 `;
 
 export default IntroPage;
