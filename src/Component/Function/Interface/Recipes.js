@@ -5,6 +5,8 @@
  * @property {string} Title - 음식의 이름
  * @property {string} Source - 음식의 재료
  * @property {string} Recipe - 음식의 레시피
+ * @property {string} Time - 음식의 조리 시간
+ * @property {string} Nation - 음식의 카테고리
  */
 const Food = {
     ID: recipe.ID,
@@ -12,4 +14,6 @@ const Food = {
     Title: recipe.Title,
     Source: recipe.Source,
     Recipe: recipe.Recipe,
+    Time: recipe.time,
+    Nation: recipe.nation,
 };

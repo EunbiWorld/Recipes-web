@@ -27,10 +27,10 @@ const RecipeInfoPage = styled.header`
     height: fit-content;
   }
   .title-section h1 {
-    width: 100%;
     text-align: center;
     font-size: 40px;
     white-space: normal;
+    font-family: "Cafe24Ssurround";
   }
   .img-section {
     display: flex;
@@ -84,8 +84,8 @@ const RecipeInfoPage = styled.header`
   }
   @media screen and (max-width: 910px) {
     .title-section {
-      width: fit-content;
-      margin: 15px;
+      width: 100%;
+      margin-top: 15px;
     }
     .img-section img {
       width: 400px;
@@ -104,7 +104,7 @@ const RecipeInfoPage = styled.header`
       grid-template-columns: 1fr;
     }
     .title-section {
-      width: fit-content;
+      width: 100%;
       margin: 15px;
     }
     .img-section {
