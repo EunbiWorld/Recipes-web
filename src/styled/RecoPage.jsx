@@ -27,7 +27,7 @@ const RecoPage = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 1em;
-    height: 35em;
+    height: auto;
     padding: 3em 15em;
   }
 
@@ -76,6 +76,17 @@ const RecoPage = styled.div`
   .grid_item:nth-child(4) {
     grid-column: 3 / 5;
     grid-row: 2;
+  }
+
+  @media screen and (max-width: 1600px) {
+    .recipe-grid{
+      padding: 3em 7em;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .recipe-grid{
+      padding: 3em;
+    }
   }
 `;
 

@@ -43,8 +43,8 @@ const RecipeListPage = styled.header`
   .RecipeCard img {
     width: 100%;
     height: 250px;
-    border: 1px #414581;
-    border-style: solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
   }
 
   .RecipeCard span {
@@ -65,6 +65,7 @@ const RecipeListPage = styled.header`
     margin-top: 10px;
     font-family: "Cafe24Ssurroundair";
   }
+
   @media screen and (max-width: 1200px) {
     .grid-container {
       width: auto;

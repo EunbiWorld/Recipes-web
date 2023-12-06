@@ -36,9 +36,9 @@ const RecipeList = () => {
                 style={{ textDecoration: "none" }}
               >
                 <img src={recipe.Image} alt={recipe.Title} />
-                <span>카테고리 들어갈 곳</span>
+                <span>{recipe.nation}</span>
                 <h1>{recipe.Title}</h1>
-                <p>소요시간 들어갈 곳</p>
+                <p>{recipe.time}</p>
               </Link>
             </div>
           ))}
